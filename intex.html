@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro 2050</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="telaInicial" class="hero">
+  <div class="overlay">
+    <h1>🌱 AGRO 2050</h1>
+    <h2>O Futuro Sustentável Começa Hoje</h2>
+    <p>Digite seu nome e embarque nesta missão pelo agro do futuro.</p>
+
+    <input type="text" id="nomeJogador" placeholder="Digite seu nome">
+    <br>
+    <button onclick="iniciarMissao()">🚀 INICIAR MISSÃO</button>
+    <p class="dica">▼ Clique para começar sua jornada ▼</p>
+  </div>
+</div>
+
+<div id="areaPerguntas">
+  <h1 id="boasVindas"></h1>
+
+  <h2>📊 Progresso</h2>
+  <progress id="progresso" value="0" max="10"></progress>
+  <p id="pontuacao">⭐ 0 pontos</p>
+
+  <div class="pergunta"><p>1. Qual tecnologia ajuda a economizar água?</p>
+  <button onclick="responder('r1',true)">Irrigação Inteligente</button>
+  <button onclick="responder('r1',false)">Queimadas</button><p id="r1"></p></div>
+
+  <div class="pergunta"><p>2. Para que servem os drones agrícolas?</p>
+  <button onclick="responder('r2',true)">Monitorar lavouras</button>
+  <button onclick="responder('r2',false)">Poluir rios</button><p id="r2"></p></div>
+
+  <div class="pergunta"><p>3. O que é agricultura de precisão?</p>
+  <button onclick="responder('r3',true)">Uso de tecnologia</button>
+  <button onclick="responder('r3',false)">Plantio sem planejamento</button><p id="r3"></p></div>
+
+  <div class="pergunta"><p>4. Qual é uma energia renovável?</p>
+  <button onclick="responder('r4',true)">Energia Solar</button>
+  <button onclick="responder('r4',false)">Carvão</button><p id="r4"></p></div>
+
+  <div class="pergunta"><p>5. O reflorestamento ajuda a:</p>
+  <button onclick="responder('r5',true)">Recuperar áreas</button>
+  <button onclick="responder('r5',false)">Aumentar desmatamento</button><p id="r5"></p></div>
+
+  <div class="pergunta"><p>6. Agricultura sustentável significa:</p>
+  <button onclick="responder('r6',true)">Produzir preservando recursos</button>
+  <button onclick="responder('r6',false)">Produzir sem limites</button><p id="r6"></p></div>
+
+  <div class="pergunta"><p>7. A IA pode ajudar:</p>
+  <button onclick="responder('r7',true)">Analisando dados</button>
+  <button onclick="responder('r7',false)">Aumentando queimadas</button><p id="r7"></p></div>
+
+  <div class="pergunta"><p>8. A tecnologia ajuda o agro:</p>
+  <button onclick="responder('r8',true)">Com mais produtividade</button>
+  <button onclick="responder('r8',false)">Com menos qualidade</button><p id="r8"></p></div>
+
+  <div class="pergunta"><p>9. Como reduzir desperdício?</p>
+  <button onclick="responder('r9',true)">Melhor armazenamento</button>
+  <button onclick="responder('r9',false)">Descartar mais</button><p id="r9"></p></div>
+
+  <div class="pergunta"><p>10. Desenvolvimento sustentável é:</p>
+  <button onclick="responder('r10',true)">Pensar no futuro</button>
+  <button onclick="responder('r10',false)">Usar tudo hoje</button><p id="r10"></p></div>
+
+  <h2>📰 Notícias de 2050</h2>
+  <div class="noticia">🌎 Brasil lidera a agricultura sustentável mundial.</div>
+  <div class="noticia">🚁 Drones economizam milhões de litros de água.</div>
+  <div class="noticia">☀️ Fazendas usam energia renovável.</div>
+
+  <button onclick="certificado()">🏆 GERAR CERTIFICADO</button>
+  <div id="certificadoFinal"></div>
+  <button onclick="reiniciarMissao()">🏠 VOLTAR AO INÍCIO</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
